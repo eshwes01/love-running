@@ -20,6 +20,9 @@ body{
 header{
     background-color: rgb(196, 196, 239);
 }
+h1{
+    font-family:'Ubuntu',sans-serif;
+}
 /* Main */
 main{
     background-color:rgb(218, 211, 171);
