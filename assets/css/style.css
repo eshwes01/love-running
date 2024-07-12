@@ -1,3 +1,9 @@
+/* Astrick Wildcard selector to override default style added to our browser */
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
 /* Header */
 header{
     background-color: blue;
@@ -9,4 +15,7 @@ main{
 /* Footer */
 footer{
     background-color:brown
+}
+body{
+    min-height:100%;
 }
