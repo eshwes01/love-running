@@ -32,7 +32,7 @@ header {
 }
 
 /* Navbar Style with dropdown toggle */
-nav {
+/* nav {
     position: absolute;
     background-color: #ffffff;
     padding: 0 1rem;
@@ -40,20 +40,21 @@ nav {
     width: 100%;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top:100%;
-}
+    top: 100%;
+} */
 
 /* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 
 }
-#nav-toggle{
+
+#nav-toggle {
     display: none;
 }
 
-.nav-toggle-label{
-    font-size : 2rem;
+.nav-toggle-label {
+    font-size: 2rem;
 }
 
 h1 {
@@ -64,14 +65,14 @@ h1 {
 }
 
 /* menu  */
-#menu {
+ #menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
 /* menu content  */
-#meunu>li {
+ #menu>li {
     margin-bottom: 1em;
 }
 
@@ -91,4 +92,29 @@ main {
 /* Footer */
 footer {
     background-color: brown
+}
+
+/* Media query tablet and larger (768px and up) */
+@media screen and(min-width:768px) {
+    /* Header */
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width : fit-content;
+        padding-right : 1rem;
+    }
+
+
+    /* #menu>li{
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display:none;
+    } */
+    #logo{
+        font-size:280px;
+        line-height:75px;
+        margin: 0 0.5 
+    }
 }
