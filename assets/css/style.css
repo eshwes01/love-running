@@ -3,69 +3,92 @@
 
 /* Astrick Wildcard selector to override default style added to our browser */
 * {
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 /* General style */
-body{
-    min-height:100vh;
-    display:flex;
+body {
+    min-height: 100vh;
+    display: flex;
     flex-direction: column;
     /* Generic Project style */
-    color:#3a3a3a;
-    font-family:'Ubuntu',sans-serif;
+    color: #3a3a3a;
+    font-family: 'Ubuntu', sans-serif;
 }
+
 /* Header */
-header{
+header {
     background-color: #ffffff;
-    padding:  1rem;
+    padding: 1rem;
     position: fixed;
-    z-index:99;
-    width:100%;
-    box-shadow:0 2px 2px #3a3a3a;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
-h1{
-    font-family:'Ubuntu',sans-serif;
+
+/* Navbar Style with dropdown toggle */
+nav {
+    position: absolute;
+    background-color: #ffffff;
+    padding: 0 1rem;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+    top:100%;
+}
+
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+
+}
+#nav-toggle{
+    display: none;
+}
+
+.nav-toggle-label{
+    font-size : 2rem;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
+
 /* menu  */
-#menu{
+#menu {
     font-size: 110%;
     letter-spacing: 4px;
     list-style-type: none;
 }
 
 /* menu content  */
-#meunu > li{
+#meunu>li {
     margin-bottom: 1em;
 }
 
-.active{
+.active {
     border-bottom: 1px solid #252525;
 }
 
-/* Navbar Style with dropdown toggle */
-nav{
-    position: absolute;
-    background-color: #ffffff;
-    position: fixed;
-    padding: 0 1rem;
-    left:0;
-    width:100%;
-    box-shadow:0 2px 2px #3a3a3a;
-}
+
 /* Main */
-main{
-    background-color:rgb(218, 211, 171);
+main {
+    background-color: rgb(218, 211, 171);
     /* Make main content take up any space needed in the browser */
-    flex:1 0 auto;
+    flex: 1 0 auto;
+    margin-top: 47px;
 }
+
 /* Footer */
-footer{
-    background-color:brown
+footer {
+    background-color: brown
 }
-
-
