@@ -90,8 +90,19 @@ main {
 }
 
 /* Footer */
-footer {
-    background-color: brown;
+#social-network{
+    text-align:center;
+    padding: 20px 0;
+    display: flex;
+    justify-content:space-evenly;
+    list-style-type:none;
+}
+
+#social-network i{
+    font-size:160%;
+    padding:5%;
+    color:#3a3a3a;
+
 }
 
 /* Media query tablet and larger (768px and up) */
