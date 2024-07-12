@@ -6,20 +6,19 @@
 }
 /* General style */
 body{
-    min-height:100%;
+    min-height:100vh;
     display:flex;
     flex-direction: column;
     /* Generic Project style */
     color:#3a3a3a;
 }
-
 /* Header */
 header{
     background-color: blue;
 }
 /* Main */
 main{
-    background-color:chartreuse;
+    background-color:rgb(218, 211, 171);
     /* Make main content take up any space needed in the browser */
     flex:1 0 auto;
 }
