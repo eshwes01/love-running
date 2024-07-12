@@ -4,18 +4,28 @@
     margin:0;
     box-sizing: border-box;
 }
+/* General style */
+body{
+    min-height:100%;
+    display:flex;
+    flex-direction: column;
+    /* Generic Project style */
+    color:#3a3a3a;
+}
+
 /* Header */
 header{
     background-color: blue;
 }
 /* Main */
 main{
-    background-color:chartreuse
+    background-color:chartreuse;
+    /* Make main content take up any space needed in the browser */
+    flex:1 0 auto;
 }
 /* Footer */
 footer{
     background-color:brown
 }
-body{
-    min-height:100%;
-}
+
+
