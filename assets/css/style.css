@@ -86,12 +86,12 @@ main {
     background-color: rgb(218, 211, 171);
     /* Make main content take up any space needed in the browser */
     flex: 1 0 auto;
-    margin-top: 47px;
+    margin-top:47px;
 }
 
 /* Footer */
 footer {
-    background-color: brown
+    background-color: brown;
 }
 
 /* Media query tablet and larger (768px and up) */
