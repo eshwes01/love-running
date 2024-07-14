@@ -18,6 +18,16 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+}
+h2, h3{
+
+}
+
 /* Header */
 header {
     background-color: #ffffff;
@@ -53,16 +63,23 @@ nav {
     display: none;
 }
 
+#cover-text{
+    background-color:  rgba(249,109,107,0.7);
+    font-size: 130%;
+    position:relative;
+    bottom: 30px;
+    width:80%;
+    min-height:200px;
+    padding-top:40px;
+    padding-left: 10px;
+}
+#cover-text>h2, #cover-text>h3{
+    color:#ffffff;
+}
 .nav-toggle-label {
     font-size: 2rem;
 }
 
-h1 {
-    font-family: 'Ubuntu', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-}
 
 /* menu  */
  #menu {
@@ -83,10 +100,14 @@ h1 {
 
 /* Main */
 main {
-    background-color: rgb(218, 211, 171);
     /* Make main content take up any space needed in the browser */
     flex: 1 0 auto;
     margin-top:47px;
+}
+#hero{
+    height:600px;
+    width:100%;
+    background: url("../images/reasons-image.webp" )no-repeat center center/cover;
 }
 #reasons{
     margin:20px auto;
@@ -100,10 +121,12 @@ main {
 #benefits p{
     padding: 0 20px;
 }
+
 #benefits-physical>div,#benefits-mental>div{
     line-height:20px;
     margin-bottom:20px;
 }
+
 hr{
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
