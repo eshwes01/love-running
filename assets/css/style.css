@@ -18,14 +18,15 @@ body {
     font-family: 'Ubuntu', sans-serif;
 }
 
-h1 {
+h1,h2,h3 {
     font-family: 'Ubuntu', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
 }
-h2, h3{
 
+.hidden-heading{
+    display:none;
 }
 
 /* Header */
@@ -56,12 +57,12 @@ nav {
 /* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
-
 }
 
 #nav-toggle {
     display: none;
 }
+
 #cover-text{
     /* final rgba value sets the opacity so its semi-transparent */
     background-color:  rgba(249,109,107,0.7);
@@ -97,18 +98,21 @@ nav {
 .active {
     border-bottom: 1px solid #252525;
 }
+
 /* Main */
 main {
     /* Make main content take up any space needed in the browser */
     flex: 1 0 auto;
     margin-top:47px;
 }
+
 #hero{
     height:600px;
     width:100%;
     position:relative;
     background: url("../images/hero-image.webp" )no-repeat center center/cover;
 }
+
 #circle-cover-bg{
     background:url("../images/reasons-image.webp" )no-repeat top center/cover;
     height: 90vw;
@@ -122,6 +126,7 @@ main {
 #reasons{
     margin:20px auto;
 }
+
 #reasons h2{
     margin-bottom:20px;
     text-align: center;
@@ -155,8 +160,31 @@ hr{
     font-size:160%;
     padding:5%;
     color:#3a3a3a;
+}
+/* Meet Up Section */
+#times{
+    background: url("../images/dublin-city.webp") no-repeat center/cover;
+    /* Handle responsivity without the need of the media query */
+    flex-wrap: wrap;
+    display: flex; 
+}
+#times div{
+    color:#ffffff;
+    background-color: rgba(0,0,0,0.6);
+    padding:13px;
+    text-align:center;
+    /* Each div will expand to fill the availiable space on its row */
+    flex-basis:200px;
+    flex-grow:1;
+    border: 2px solid white;
+}
+
+#times h3{
+    /* Override the heading color set in general styles  */
+    color : #ffffff;
 
 }
+
 /* Media query tablet and larger (1200px and up) */
 @media screen and (min-width:1200px) {
     #benefits{
@@ -181,7 +209,6 @@ hr{
         order:1;
     }
 }
-
 /* Media query tablet and larger (768px and up) */
 @media screen and (min-width:768px) {
     /* Header */
@@ -209,6 +236,7 @@ hr{
         line-height:75px;
         margin: 0 0.5rem;
     }
+
     /* Hero */
     #cover-text{
         width:300px;
