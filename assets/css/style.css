@@ -147,6 +147,16 @@ hr{
     margin: 5px 0;
 }
 
+/* Gallery page */
+#photos img{
+    width: 100%;
+    line-height: 1;
+}
+
+#photos{
+    line-height:0;
+}
+
 /* Footer */
 #social-network{
     text-align:center;
@@ -161,6 +171,7 @@ hr{
     padding:5%;
     color:#3a3a3a;
 }
+
 /* Meet Up Section */
 #times{
     background: url("../images/dublin-city.webp") no-repeat center/cover;
@@ -183,6 +194,12 @@ hr{
     /* Override the heading color set in general styles  */
     color : #ffffff;
 
+}
+
+/* Media query tablet and larger (992px and up) */
+@media screen and (min-width:992px) {
+    /* Header */
+    
 }
 
 /* Media query tablet and larger (1200px and up) */
