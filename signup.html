@@ -36,13 +36,28 @@
         <section id="signup">
             <form action="https://formdump.codeinstitute.net" method="POST" id="signup-form">
             <h2><i class="fa-solid fa-heart-pulse"></i> Let's get you signed up </h2>
-                <label for="frist-name">First Name </label><input type="text" id="first-name" required><br>
-                <label for="last-name"> Last Name </label><input type="text" id="last-name" required><br>
-                <label for="email-address"> Email Address </label><input type="text" id="email-address" required><br> 
+
+                <label for="frist-name">First Name </label>
+                <input type="text" id="first-name" name="first-name" class="text-input" required><br>
+                
+                <label for="last-name"> Last Name </label>
+                <input type="text" id="last-name" name="last-name" class="text-input" required><br>
+                
+                <label for="email-address"> Email Address </label>
+                <input type="text" id="email-address" class="text-input" required><br> 
                 <div class="radio.buttons">
-                    <label for="road">Road</label><input type="radio" id="road" name="running_preference" required checked><br>
-                    <label for="road">Trail</label><input type="radio" id="trail" name="running_preference" required><br>
-                    <label for="road">Both</label><input type="radio" id="both" name="running_preference" required><br>
+                    <div>
+                        <label for="road">Road</label>
+                        <input type="radio" id="road" name="running_preference" required checked><br>
+                    </div>
+                    <div>
+                        <label for="trail">Trail</label>
+                        <input type="radio" id="trail" name="running_preference" required><br>
+                    </div>
+                    <div>
+                    <label for="both">Both</label>
+                    <input type="radio" id="both" name="running_preference" required><br>
+                    </div>
             </div>
                 <input type="submit" class="join-button" value="Lets Run">
             </form>
