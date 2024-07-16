@@ -222,13 +222,10 @@ hr {
         }
 
     }
-
-
     #photos {
         column-count: 2;
         column-gap: 0;
     }
-
 }
 
 /* Media query tablet and larger (1200px and up) */
@@ -258,7 +255,6 @@ hr {
     #benefits-mental {
         order: 1;
     }
-
     /* Gallery */
     #photos {
         column-count: 3;
@@ -276,7 +272,6 @@ hr {
         width: fit-content;
         padding-right: 1rem;
     }
-
     #menu {
         display: flex;
     }
