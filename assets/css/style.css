@@ -220,12 +220,13 @@ hr {
     border: 1px solid #fafafa;
     border-radius:2px;
 }
-
+.join-button{
+    border-radius:2px;
+    background-color:#454b1b;
+    font-size: 100%;
+}
 /* Media query mobile screen (576px and up) */
 @media screen and (min-width:576px) {
-
-    
-
     #photos {
         column-count: 2;
         column-gap: 0;
@@ -317,7 +318,6 @@ hr {
         width: 300px;
         right: 50px;
     }
-
     /* Main content */
     main {
         /* Enlarge main element to push footer down*/
@@ -328,4 +328,25 @@ hr {
         display: flex;
         flex-direction: column;
     }
+    /* Sign-UP */
+    #signup {
+        background-position: center;
+        position: relative;
+    }
+    /* Sign-up Form */
+    #signup-form {
+        max-width: 400px;
+        position: absolute;
+        left: 10%;
+        top: 150px;
+    }
+
+    .text-input:hover{
+        border-color:#f16c6b;
+    }
+    .join-button:hover{
+       background-color: #fafafa; 
+       color: #454b1b;
+    }
+    
 }
