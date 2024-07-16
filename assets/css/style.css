@@ -200,6 +200,8 @@ hr {
     color: #ffffff;
 
 }
+
+/* Form  */
 #signup{
     background-size:cover;
     background-position:75%;
@@ -207,19 +209,29 @@ hr {
     background-image: url("../images/signup-image.webp");
     padding: 20px 10% 0 10%; 
 }
+/* Sign UP for H2 */
 #signup h2{
     color: #fafafa;
 }
+
 #signup-form{
     background-color:rgba(60,60,60,0.6);
     color:#ffffff;
     padding : 30px;
 }
+
+.radio-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
 .text-input{
     color:#fafafa;
     border: 1px solid #fafafa;
     border-radius:2px;
 }
+
 .join-button{
     border-radius:2px;
     background-color:#454b1b;
@@ -241,18 +253,12 @@ hr {
         /* Enable flex properties for child elements */
         display: flex;
         flex-direction: column;
-    } 
-    #signup {
-        background-image: url("../images/signup-image.webp");
-        background-size: cover;
-        background-position: 75%;
-        padding: 20px 10% 0 10%;
-        flex-grow: 1;
     }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width:992px) {
+
     #menu a:hover {
         border-bottom: 1px #3a3a3a;
     }
