@@ -196,9 +196,33 @@ hr{
 
 }
 
-/* Media query tablet and larger (992px and up) */
+
+/* Media query mobile screen (576px and up) */
+@media screen and (min-width:576px) {
+    #photos{
+        column-count:2;
+        column-gap:0;
+    }
+    
+}
+
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width:992px) {
-    /* Header */
+   #menu a:hover{
+    border-bottom:1px #3a3a3a;
+
+    /* Gallery */
+    #photo{
+        column-count:4;
+    }
+
+   }
+   
+   
+    #photos{
+        column-count:2;
+        column-gap:0;
+    }
     
 }
 
@@ -225,6 +249,10 @@ hr{
     #benefits-mental{
         order:1;
     }
+    /* Gallery */
+    #photos{
+    column-count:3;
+}
 }
 /* Media query tablet and larger (768px and up) */
 @media screen and (min-width:768px) {
