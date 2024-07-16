@@ -225,30 +225,41 @@ hr {
     background-color:#454b1b;
     font-size: 100%;
 }
+
 /* Media query mobile screen (576px and up) */
 @media screen and (min-width:576px) {
     #photos {
         column-count: 2;
         column-gap: 0;
     }
-
+    /* Main content */
+    main {
+        /* Enlarge main element to push footer down*/
+        flex: 1 0 auto;
+        /* Add margin at the top to prevent content from being covered by the header */
+        margin-top: 47px;
+        /* Enable flex properties for child elements */
+        display: flex;
+        flex-direction: column;
+    } 
+    #signup {
+        background-image: url("../images/signup-image.webp");
+        background-size: cover;
+        background-position: 75%;
+        padding: 20px 10% 0 10%;
+        flex-grow: 1;
+    }
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width:992px) {
     #menu a:hover {
         border-bottom: 1px #3a3a3a;
-
-        /* Gallery */
-        #photo {
-            column-count: 4;
-        }
-
     }
-    #photos {
-        column-count: 2;
-        column-gap: 0;
-    }
+    /* Gallery */
+    #photo {
+        column-count: 4;
+    }   
 }
 
 /* Media query tablet and larger (1200px and up) */
@@ -268,7 +279,6 @@ hr {
 
     #benefits-mental>div {
         align-self: flex-end;
-
     }
 
     #benefits-image {
@@ -318,16 +328,7 @@ hr {
         width: 300px;
         right: 50px;
     }
-    /* Main content */
-    main {
-        /* Enlarge main element to push footer down*/
-        flex: 1 0 auto;
-        /* Add margin at the top to prevent content from being covered by the header */
-        margin-top: 47px;
-        /* Enable flex properties for child elements */
-        display: flex;
-        flex-direction: column;
-    }
+    
     /* Sign-UP */
     #signup {
         background-position: center;
