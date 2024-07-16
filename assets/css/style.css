@@ -200,7 +200,26 @@ hr {
     color: #ffffff;
 
 }
-
+#signup{
+    background-size:cover;
+    background-position:75%;
+    flex-grow:1;
+    background-image: url("../images/signup-image.webp");
+    padding: 20px 10% 0 10%; 
+}
+#signup h2{
+    color: #fafafa;
+}
+#signup-form{
+    background-color:rgba(60,60,60,0.6);
+    color:#ffffff;
+    padding : 30px;
+}
+.text-input{
+    color:#fafafa;
+    border: 1px solid #fafafa;
+    border-radius:2px;
+}
 
 /* Media query mobile screen (576px and up) */
 @media screen and (min-width:576px) {
