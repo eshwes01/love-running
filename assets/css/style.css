@@ -236,8 +236,11 @@ hr {
 
 .join-button {
     border-radius: 2px;
-    background-color: #454b1b;
+    background-color: #ccf693;
     font-size: 100%;
+    margin-top: 10px;
+    margin-left: 50px;
+    padding: 5px 9px 8px 5px;
 }
 
 /* Radio Buttons */
