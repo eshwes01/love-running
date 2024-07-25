@@ -107,6 +107,8 @@ main {
     /* Make main content take up any space needed in the browser */
     flex: 1 0 auto;
     margin-top: 47px;
+    display:flex;
+    flex-direction: column;
 }
 
 #hero {
@@ -205,21 +207,25 @@ hr {
 #signup {
     background-size: cover;
     background-position: 75%;
-    flex-grow: 1;
     background-image: url("../images/signup-image.webp");
     padding: 20px 10% 0 10%;
+    flex-grow: 1;
+    /* flex:1 0 auto; */
 }
 
 
 /* Sign UP for H2 */
-#signup h2 {
+#signup-form>h2 {
     color: #fafafa;
+    margin-bottom:20px;
 }
 
 #signup-form {
     background-color: rgba(60, 60, 60, 0.6);
     color: #ffffff;
     padding: 30px;
+    /* max-width: 600px; */
+    
 }
 
 .text-input {
@@ -247,17 +253,18 @@ hr {
         column-count: 2;
         column-gap: 0;
     }
-
     /* Main content */
     main {
         /* Enlarge main element to push footer down*/
         flex: 1 0 auto;
         /* Add margin at the top to prevent content from being covered by the header */
-        margin-top: 47px;
+        margin-top: 50px;
         /* Enable flex properties for child elements */
         display: flex;
         flex-direction: column;
     }
+
+    
 }
 
 /* Large devices (laptops and desktops, 992px and up) */
@@ -308,7 +315,6 @@ hr {
 
 /* Media query tablet and larger (768px and up) */
 @media screen and (min-width:768px) {
-
     /* Header */
     nav {
         display: block;
@@ -346,6 +352,7 @@ hr {
     #signup {
         background-position: center;
         position: relative;
+        flex:1 0 auto;
     }
 
     /* Sign-up Form */
@@ -363,5 +370,5 @@ hr {
         background-color: #fafafa;
         color: #454b1b;
     }
-
+    
 }
